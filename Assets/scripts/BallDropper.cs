@@ -9,7 +9,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         print("Updating BallDropper");
         // if the left mouse button was pressed
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Game.IsGameStarted() && Mouse.current.leftButton.wasPressedThisFrame)
         {
             DropBall();
         }
